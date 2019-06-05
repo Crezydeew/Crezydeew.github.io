@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card animation</title>
+	<link rel="stylesheet" type="text/css" href="styles/css3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body>
+	<iframe style="display: none;" src="styles/music/ashes-remain-everything-good.mp3"></iframe>
+
+	<div class="gallery">
+		<div class="button"><a href="styles/img/slide/1.jpg" class="iamge"><img src="styles/img/photo.jpg" width="80px" height="80px"></a></div>	
+			<a href="styles/img/slide/2.jpg" class="iamge"></a>
+			<a href="styles/img/slide/3.jpg" class="iamge"></a>
+			<a href="styles/img/slide/4.jpg" class="iamge"></a>
+			<a href="styles/img/slide/5.jpg" class="iamge"></a>
+			<a href="styles/img/slide/6.jpg" class="iamge"></a>
+			<a href="styles/img/slide/7.jpg" class="iamge"></a>
+			<a href="styles/img/slide/8.jpg" class="iamge"></a>
+			<a href="styles/img/slide/9.jpg" class="iamge"></a>
+			<a href="styles/img/slide/10.jpg" class="iamge"></a>
+			<a href="styles/img/slide/11.jpg" class="image"></a>
+			<a href="styles/img/slide/12.jpg" class="image"></a>
+			<a href="styles/img/slide/13.jpg" class="image"></a>
+			<a href="styles/img/slide/14.jpg" class="image"></a>
+			<a href="styles/img/slide/15.jpg" class="image"></a>
+			<a href="styles/img/slide/16.jpg" class="image"></a>
+			<a href="styles/img/slide/17.jpg" class="image"></a>
+			<a href="styles/img/slide/18.jpg" class="image"></a>
+			<a href="styles/img/slide/19.jpg" class="image"></a>
+	</div>          
+
+<div class="card mid">
+		<div class="front">
+			<div class="content">
+				<img src="styles/img/felicitare.png" width="90%" height="60%">			
+			</div>
+		</div>
+		<div class="back">		
+			<img src="styles/img/ramka.png" width="100%" height="100%"/>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(".card").click(function(){
+			$(".card").toggleClass("card-active");
+			$(".audio").play();
+		});
+	</script>
+	<script type="text/javascript">
+		$(".gallery").magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery:{
+				enabled: true
+			}
+		});
+	</script>
+</body>
+</html>
